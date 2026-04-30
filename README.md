@@ -66,6 +66,10 @@ I follow a structured approach:
 - Adding comments and explanations for each program  
 
 ---
+🔄 Continuous Development
+
+This repository is an ongoing reflection of my learning journey.  
+I am consistently working on improving my programming skills, and **this repository will be regularly updated as long as I continue learning and growing in C++ and problem solving.**
 
 🙋‍♀️ Author
 
