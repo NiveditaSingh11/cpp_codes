@@ -10,7 +10,7 @@ vector<int> targetSumPair(vector<int> &v,int targetSum ){
     for(int i=0;i<v.size();i++){
         if(m.find(targetSum-v[i]) != m.end()){
             ans[0] =m[targetSum-v[i]];
-            ans[1]=i;
+            ans [1]=i;
             return ans;
         }
         else{
