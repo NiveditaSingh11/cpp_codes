@@ -13,6 +13,17 @@ void removeFromBottom(stack<int> &st){
     st.push(curr);
 }
 
+
+void removeFromTop(stack<int> &st) {
+    if (st.empty()) {
+        cout << "Stack is empty!" << endl;
+        return;
+    }
+
+    st.pop();
+}
+
+
 void removeBottom(stack<int> &st){
     stack<int> temp;
     int n= st.size();
