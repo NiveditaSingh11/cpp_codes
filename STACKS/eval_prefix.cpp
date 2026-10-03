@@ -26,9 +26,9 @@ int eval(string &str){
         }
 
         else{
-            int v2= st.top();
-            st.pop();
             int v1=st.top();
+            st.pop();
+            int v2= st.top();
             st.pop();
             st.push(calc(v1,v2,ch));
         }
