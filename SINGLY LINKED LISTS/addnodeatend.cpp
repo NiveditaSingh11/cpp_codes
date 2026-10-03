@@ -1,4 +1,4 @@
- #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 class Node {
     public:
@@ -33,6 +33,43 @@ while(temp->next != NULL){// tab chalega jab temp ka next null hoga
 temp->next = new_node;
 
 }
+
+void insertAtKthPosition(Node* &head, int val, int k) {
+
+    // If k = 1, insert at head
+    if (k == 1) {
+        insertAtHead(head, val);
+        return;
+    }
+
+    Node* new_node = new Node(val);
+
+    Node* temp = head;
+
+    // Move to (k-1)th node
+    for (int i = 1; i < k - 1; i++) {
+
+        if (temp == NULL) {
+            cout << "Invalid position!" << endl;
+            delete new_node;
+            return;
+        }
+
+        temp = temp->next;
+    }
+
+    // If position is beyond the list
+    if (temp == NULL) {
+        cout << "Invalid position!" << endl;
+        delete new_node;
+        return;
+    }
+
+    // Insert the new node
+    new_node->next = temp->next;
+    temp->next = new_node;
+}
+
 void display(Node* head){
     Node* temp = head;
     while(temp != NULL){ 
